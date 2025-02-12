@@ -12,7 +12,7 @@ Doing Benchmarking Experiments Using Fat Pointers in C and Checked C
 
 - Compile the c program file using GCC 14
 
-`/usr/local/bin/gcc-14 -O3 default_c.c -fopenmp -o default-c`
+`/usr/local/bin/gcc-14 gcc -O3 default_c.c -fopenmp -o default-c`
 
 - Run the compiled program with the following command
 

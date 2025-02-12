@@ -7,6 +7,8 @@
 #define N 20000
 #define THREADS_NB omp_get_max_threads()
 
+// Microbenchmarking in Checked C
+
 void init_arrays(double *a, double *b) {
   memset(a, 0, N * sizeof(a));
   memset(b, 0, N * sizeof(b));
