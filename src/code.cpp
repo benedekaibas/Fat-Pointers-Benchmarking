@@ -7,7 +7,7 @@ using namespace std;
 
 // Microbenchmarking in c++
 
-void int_arrays(doube *a, double *b){
+void int_arrays(doube a, double b){
     memset(a, 0, N * sizeof(a));
     memset(b, 0, N * sizeof(b));
 
@@ -17,3 +17,16 @@ void int_arrays(doube *a, double *b){
     }
 
 }
+
+double func2 (double *i, double *j){
+    double res = 0.0;
+
+    while (i / j > 0.0){
+        res += i / j;
+        i -= 0.1;
+        j -= 0.000003;
+    }
+    return res;
+
+}
+
