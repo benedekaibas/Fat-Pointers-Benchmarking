@@ -30,3 +30,15 @@ double func2 (double i, double j){
 
 }
 
+double single_thread(double *a, double *b){
+    double res = 0.0;
+    int i,j;
+
+    for (i = 0; i < N; i++){
+        for (j = 0; j < N; j++){
+            if (i == j) continue;
+            res += func2(a[i], b[j]); 
+        }   
+    }
+    return res;
+}
