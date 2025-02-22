@@ -18,7 +18,7 @@ void init_arrays(_Array_ptr<double> a : count(N), _Array_ptr<double> b : count(N
   }
 }
 
-double func2(double i, double j) { // TODO: Consider using fat pointers in this function too
+double func2(double i, double j) {
   double res = 0.0;
 
   while (i / j > 0.0) {
