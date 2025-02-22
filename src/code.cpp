@@ -1,4 +1,8 @@
 #include <iostream>
+#include <cstring>
+#include <ctime>
+#include <omp.h>
+
 using namespace std;
 
 #define N 20000

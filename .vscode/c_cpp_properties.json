@@ -4,14 +4,16 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/local/include"
+                "/usr/local/include",
+                "/usr/local/opt/libomp/include"
             ],
             "defines": [],
             "macFrameworkPath": [
-                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
             ],
             "compilerPath": "/usr/bin/clang",
-            "cStandard": "c17",
+            "cStandard": "c11",
             "cppStandard": "c++17",
             "intelliSenseMode": "macos-clang-x64"
         }
