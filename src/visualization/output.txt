@@ -1,0 +1,11 @@
+default c:
+Default:  Done with 2199909813.614555 in 7.753219 sd
+With OMP: Done with 2199909793.565080 in 3.550740 sd
+
+default c++:
+Default:  Done with 2199909813.614555 in 15.364940 sd
+With OMP: Done with 2199909793.565080 in 4.785809 sd
+
+smart c++:
+Default:  Done with 2199909813.614555 in 14.329920 sd
+With OMP: Done with 2199909793.565080 in 4.690495 sd
