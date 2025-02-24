@@ -9,3 +9,7 @@ With OMP: Done with 2199909793.565080 in 4.785809 sd
 smart c++:
 Default:  Done with 2199909813.614555 in 14.329920 sd
 With OMP: Done with 2199909793.565080 in 4.690495 sd
+
+checked c:
+Default:  Done with 2199909813.614555 in 14.500000 sd
+With OMP: Done with 2199909793.565080 in 4.700000 sd
