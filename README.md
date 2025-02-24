@@ -1,6 +1,7 @@
 # Fat-Pointers-Benchmarking
 
-Doing Benchmarking Experiments Using Fat Pointers in C and Checked C
+The goal of this research is to create normal and fat pointers in the C languages and show the benchmarking difference. By measuring the pace of the different implementations, we can decide if it's reasonable to give up some performance, pace, but get more secureness. By doing microbenchmarking we can measure the time and/or performance of a small building block of a real program. I used default (single thread) and OMP (Open Multiprocessing) benchmarking methods in the research. OMP utilizes multiple threads to speed up the execution by that computations are performed using multiple threads. I used default method as a baseline result to compare OMP execution.
+
 
 ## How To Compile the files
 
@@ -18,7 +19,7 @@ Doing Benchmarking Experiments Using Fat Pointers in C and Checked C
 
 `time ./default_c`
 
-## Compile C++
+### Compile C++
 
 - cd to the path of your folder where you cloned the repository
 
@@ -32,4 +33,14 @@ Doing Benchmarking Experiments Using Fat Pointers in C and Checked C
 
 `time ./code`
 
+Use the same command for compiling `code.cpp` and `smart.cpp` program. For comparison it is important to use the same compiler.
+
 ### Checked C
+
+The Dockerfile is already created, so just `cd` into the `src` folder and use the following commands:
+
+- docker build -t checkedc-benchmark . (Build a docker image)
+
+- docker run --rm checkedc-benchmark (start the checked c code)
+
+If you want to start the Docker daemon manually then run the following command: `sudo systemctl start docker`
