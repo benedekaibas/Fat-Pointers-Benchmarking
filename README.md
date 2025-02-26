@@ -35,6 +35,14 @@ The goal of this research is to create normal and fat pointers in the C language
 
 Use the same command for compiling `code.cpp` and `smart.cpp` program. For comparison it is important to use the same compiler.
 
+### Compile Rust
+
+- cd into `src/src/src` folder where `main.rs` is located and run the following command:
+
+`cargo build` and then `cargo run`
+
+This will build the code and run it, so you will be able to see the benchmarking results.
+
 ### Checked C
 
 The Dockerfile is already created, so just `cd` into the `src` folder and use the following commands:
