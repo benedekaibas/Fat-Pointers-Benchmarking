@@ -1,7 +1,8 @@
 # Fat-Pointers-Benchmarking
 
-The goal of this research is to create normal and fat pointers in the C languages and show the benchmarking difference. By measuring the pace of the different implementations, we can decide if it's reasonable to give up some performance, pace, but get more secureness. By doing microbenchmarking we can measure the time and/or performance of a small building block of a real program. I used default (single thread) and OMP (Open Multiprocessing) benchmarking methods in the research. OMP utilizes multiple threads to speed up the execution by that computations are performed using multiple threads. I used default method as a baseline result to compare OMP execution.
+The objective of this research is to implement both normal and fat pointers in the C language, Rust and analyze their benchmarking performance. By evaluating the execution speed of different implementations, we can assess whether sacrificing some performance is justifiable in exchange for enhanced security.
 
+Microbenchmarking is employed to measure the execution time and performance of a small yet critical component of a real program. In this study, both the default (single-threaded) and OMP (Open Multi-Processing) benchmarking methods were utilized. OMP leverages multiple threads to accelerate execution by distributing computations across them. The default method serves as a baseline for comparison against OMP execution.
 
 ## How To Compile the files
 
@@ -59,7 +60,7 @@ If you want to start the Docker daemon manually then run the following command: 
 
 ## Are the Benchmarking codes safe?
 
-I used the `Clang Static Analyzer` tool to ensure the benchmarking codes are free of bugs.
+I utilized the `Clang Static Analyzer` tool to verify that the benchmarking code is free of bugs. However, since this tool is designed specifically for C/C++ code, no equivalent safety check has been incorporated for the Rust benchmarking code in this research thus far.
 
 ### Here are the results
 
