@@ -56,3 +56,51 @@ If you want to start the Docker daemon manually then run the following command: 
 ## Benchmark Result
 
 ![Benchmarking Result](src/visualization/picture/benchmarking_result.png)
+
+## Are the Benchmarking codes safe?
+
+I used the `Clang Static Analyzer` tool to ensure the benchmarking codes are free of bugs.
+
+### Here are the results
+
+- Benchmarking in `C`
+
+```text
+benedekkaibas@Benedeks-MacBook-Pro src % scan-build clang -fopenmp -L/usr/local/opt/libomp/lib -I/usr/local/opt/libomp/include default_c.c -o default_c
+scan-build: Using '/usr/local/Cellar/llvm/19.1.7_1/bin/clang-19' for static analysis
+scan-build: Analysis run complete.
+scan-build: Removing directory '/var/folders/g2/5kn8dryj619gk260gdvfrh1c0000gn/T/scan-build-2025-02-26-172131-7433-1' because it contains no reports.
+scan-build: No bugs found.
+```
+
+- Benchmarking `Checked C`
+
+```text
+benedekkaibas@Benedeks-MacBook-Pro src % scan-build clang -fopenmp -L/usr/local/opt/libomp/lib -I/usr/local/opt/libomp/include checked_c.c -o checked_c
+scan-build: Using '/usr/local/Cellar/llvm/19.1.7_1/bin/clang-19' for static analysis
+scan-build: Analysis run complete.
+scan-build: Removing directory '/var/folders/g2/5kn8dryj619gk260gdvfrh1c0000gn/T/scan-build-2025-02-26-172131-7433-1' because it contains no reports.
+scan-build: No bugs found.
+```
+
+- Benchmarking `C++`
+
+```text
+benedekkaibas@Benedeks-MacBook-Pro src % scan-build clang -fopenmp -L/usr/local/opt/libomp/lib -I/usr/local/opt/libomp/include code.cpp -o default_cpp
+scan-build: Using '/usr/local/Cellar/llvm/19.1.7_1/bin/clang-19' for static analysis
+scan-build: Analysis run complete.
+scan-build: Removing directory '/var/folders/g2/5kn8dryj619gk260gdvfrh1c0000gn/T/scan-build-2025-02-26-173024-7670-1' because it contains no reports.
+scan-build: No bugs found.
+```
+
+- Benchmarking `C++ using Smart Pointers`
+
+```text
+benedekkaibas@Benedeks-MacBook-Pro src % scan-build clang++ -std=c++11 -stdlib=libc++ -fopenmp -L/usr/local/opt/libomp/lib -I/usr/local/opt/libomp/include smart.cpp -o smart
+scan-build: Using '/usr/local/Cellar/llvm/19.1.7_1/bin/clang-19' for static analysis
+scan-build: Analysis run complete.
+scan-build: Removing directory '/var/folders/g2/5kn8dryj619gk260gdvfrh1c0000gn/T/scan-build-2025-02-26-173645-8397-1' because it contains no reports.
+scan-build: No bugs found.
+```
+
+**NOTE**: You have to replace to commands to your actual path if you want to run the Static Analyzer!
