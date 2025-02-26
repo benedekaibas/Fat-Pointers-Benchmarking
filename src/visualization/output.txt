@@ -13,3 +13,7 @@ With OMP: Done with 2199909793.565080 in 4.690495 sd
 checked c:
 Default:  Done with 2199909813.614555 in 14.500000 sd
 With OMP: Done with 2199909793.565080 in 4.700000 sd
+
+rust:
+Default:  Done with 2199909813.614555 in 25.008911307 sd
+With OMP: Done with 2199909799.306387 in 10.438824328 sd
