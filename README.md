@@ -52,3 +52,7 @@ The Dockerfile is already created, so just `cd` into the `src` folder and use th
 - docker run --rm checkedc-benchmark (start the checked c code)
 
 If you want to start the Docker daemon manually then run the following command: `sudo systemctl start docker`
+
+## Benchmark Result
+
+![Benchmarking Result](src/visualization/picture/benchmarking_result.png)
