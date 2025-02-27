@@ -105,3 +105,23 @@ scan-build: No bugs found.
 ```
 
 **NOTE**: You have to replace to commands to your actual path if you want to run the Static Analyzer!
+
+
+## FAQ  
+
+To successfully run the experiments, ensure that all necessary tools are installed:  
+
+- **Checked C**: Download from the official repository [here](https://github.com/checkedc/checkedc).  
+- **OpenMP**: Install via Homebrew by running:  
+  ```sh
+  brew install libomp
+  ```
+
+### Clang Static Analyzer  
+```md
+- **[Clang Static Analyzer](https://clang-analyzer.llvm.org/)**: Download from the official website.
+
+- **Programming Languages**: Obtain the latest versions from their respective official websites:  
+  - **[C (GCC)](https://gcc.gnu.org/)**  
+  - **[C++](https://isocpp.org/get-started)**  
+  - **[Rust](https://www.rust-lang.org/)**
