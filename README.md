@@ -118,7 +118,7 @@ To successfully run the experiments, ensure that all necessary tools are install
   ```
 
 ### Clang Static Analyzer  
-```md
+
 - **[Clang Static Analyzer](https://clang-analyzer.llvm.org/)**: Download from the official website.
 
 - **Programming Languages**: Obtain the latest versions from their respective official websites:  
