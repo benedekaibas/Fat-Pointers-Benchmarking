@@ -128,4 +128,4 @@ To successfully run the experiments, ensure that all necessary tools are install
 
 ## Research Paper
 
-The access to the research paper will be posted later in March!
+The access to the research paper will be posted later in 2025!
