@@ -2,7 +2,7 @@
 #include <cstring>
 #include <ctime>
 #include <omp.h>
-
+#include <cstdio>
 
 #define N 20000
 #define THREADS_NB omp_get_max_threads()
@@ -40,8 +40,8 @@ double single_thread(double *a, double *b){
     for (i = 0; i < N; i++){
         for (j = 0; j < N; j++){
             if (i == j) continue;
-            res += func2(a[i], b[j]); 
-        }   
+            res += func2(a[i], b[j]);
+        }
     }
     return res;
 }
@@ -69,10 +69,10 @@ int main(void) {
   clock_t start_time = clock();
   double res = single_thread(a, b);
   double elapsed_time = (double)(clock() - start_time) / CLOCKS_PER_SEC;
-  std::cout << "Default:  Done with %f in %f sd\n" << res <<  elapsed_time;
+  printf("Default:  Done with %f in %f sd\n", res, elapsed_time);
 
   start_time = clock();
   res = multi_threads(a, b);
   elapsed_time = (double)(clock() - start_time) / CLOCKS_PER_SEC;
-  std::cout << "With OMP: Done with %f in %f sd\n" << res << elapsed_time / THREADS_NB;
+  printf("With OMP: Done with %f in %f sd\n", res, (elapsed_time / THREADS_NB));
 }
