@@ -128,4 +128,4 @@ To successfully run the experiments, ensure that all necessary tools are install
 
 ## Research Paper
 
-Access to the research paper: file: ///home/benedek-kaibas/Downloads/fat_pointers_benchmarking_study.pdf
+Access to the research paper: file: [Research Paper](https://drive.google.com/file/d/1XLZnCL-AZSspktfX3Vj6o35muS4v48JS/view?usp=drive_link)
