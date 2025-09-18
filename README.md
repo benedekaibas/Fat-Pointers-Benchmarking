@@ -1,8 +1,6 @@
 # Fat-Pointers-Benchmarking
 
-The objective of this research is to implement both normal and fat pointers in the C language, Rust and analyze their benchmarking performance. By evaluating the execution speed of different implementations, we can assess whether sacrificing some performance is justifiable in exchange for enhanced security.
-
-Microbenchmarking is employed to measure the execution time and performance of a small yet critical component of a real program. In this study, both the default (single-threaded) and OMP (Open Multi-Processing) benchmarking methods were utilized. OMP leverages multiple threads to accelerate execution by distributing computations across them. The default method serves as a baseline for comparison against OMP execution.
+This research benchmarks raw and fat pointer implementations in C, Checked C, C++, and Rust, evaluating the trade-offs between performance and memory safety. Using microbenchmarks under both single-threaded and OpenMP parallel execution, the study measures runtime overhead, scaling behavior, and security implications. Results show that while fat pointers introduce overhead in sequential workloads, parallelism and careful metadata management can significantly reduce their cost, making them a viable approach for safer, performance-sensitive systems.
 
 ## How To Compile the files
 
