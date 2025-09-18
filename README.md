@@ -1,6 +1,8 @@
 # Fat-Pointers-Benchmarking
 
-This research benchmarks raw and fat pointer implementations in C, Checked C, C++, and Rust, evaluating the trade-offs between performance and memory safety. Using microbenchmarks under both single-threaded and OpenMP parallel execution, the study measures runtime overhead, scaling behavior, and security implications. Results show that while fat pointers introduce overhead in sequential workloads, parallelism and careful metadata management can significantly reduce their cost, making them a viable approach for safer, performance-sensitive systems.
+This research benchmarks raw and fat pointer implementations in C, Checked C, C++, and Rust, evaluating the trade-offs between performance and memory safety. Using microbenchmarks under both single-threaded and OpenMP parallel execution, the study measures runtime overhead, scaling behavior, and security implications. 
+
+Results show that while fat pointers introduce overhead in sequential workloads, parallelism and careful metadata management can significantly reduce their cost, making them a viable approach for safer, performance-sensitive systems.
 
 ## How To Compile the files
 
