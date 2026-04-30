@@ -4,7 +4,7 @@ This research paper conducts benchmarks raw and fat pointer implementations in C
 
 Results show that while fat pointers introduce overhead in sequential workloads, parallelism and careful metadata management can significantly reduce their cost, making them a viable approach for safer, performance-sensitive systems.
 
-**NOTE**: This research was part of my junior research seminar which is a preparatory course for the senior research seminar where I as a student has to conduct a real research and publish the paper of it. This research project is kind of like a practice research that helps us, the students, to prepare for the senior comprehensive research seminar.
+***NOTE***: This research was part of my junior research seminar which is a preparatory course for the senior research seminar where I as a student has to conduct a real research and publish the paper of it. This research project is kind of like a practice research that helps us, the students, to prepare for the senior comprehensive research seminar.
 
 ## How To Compile the files
 
